@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "first attempt at a live portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "portfolio_live"
+  },
+  "author": "Maria Pop",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.8.0"
+  },
+  "devDependencies": {}
+}
