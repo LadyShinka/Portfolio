@@ -1,0 +1,273 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(130, 194, 236);
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .jumbotron {
+    height: auto;
+} */
+
+.mainImage {
+    background: url("https://wallpapersmug.com/download/3840x2400/582cfc/abstract-geometry-glass-dark-4k.jpg") center center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 15%;
+}
+
+#nameTitle {
+    color: ivory;
+    text-shadow: rgb(0, 0, 0) 3px 3px;
+}
+
+#description {
+    color: ivory;
+    text-shadow: rgb(0, 0, 0) 3px 3px;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+
+/* Arrow down button */
+@keyframes jump {
+    0% {
+        top: 0;
+   }
+    50% {
+        top: 50px;
+   }
+    100% {
+        top: 0;
+   }
+}
+#arrow-down {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    animation: jump 5s infinite;
+}
+#arrow-down i {
+    /* content: '\f0a8'; */
+    /* font-family: 'FontAwesome'; */
+    font-size: 80px;
+    transition: 0.3s ease-in-out;
+}
+#arrow-down i:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 4% 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+body a {
+    color: #fff;
+}
+/* Arrow down button ending */
+#area{
+    grid-area: text;
+    height: 100%;
+}
+#imgMe {
+    border-radius: 500px;
+    grid-area: image;
+    max-width: 350px;
+    max-height: auto;
+    padding: 5% 5%;
+}
+
+.biography {
+    padding-top: 5%;
+    height: 100%;
+    display:grid;
+    grid-gap: 10px;
+    grid-auto-columns: 50%;
+    grid-template-areas: 
+    'text image'
+    'text image';
+    font-family: 'Palanquin Dark', sans-serif;
+    padding-bottom: 2%;
+}
+/* #cert1, #cert2 {
+    
+} */
+h3 + p {
+    margin: 10% auto 10% auto;
+}
+#contaierContent {
+    position: relative;
+    /* margin-bottom: 10%; */
+}
+#catpic{
+    max-width: 70px;
+    max-height: 70px;
+}
+.achievements {
+ /* Old Chrome, Safari and Opera */
+  -webkit-column-count: 2;
+  -webkit-column-gap: 30px;  
+  -webkit-column-rule-style: solid;
+
+  /* Old Firefox */  
+  -moz-column-count: 2;
+  -moz-column-gap: 30px;
+  -moz-column-rule-style: solid;
+  
+  /* Standard syntax */
+  column-count: 2;
+  column-gap: 30px;
+  column-rule-style: solid;
+  column-rule-color: rgb(33, 93, 131);
+  column-rule-width: 1px;
+
+  position: relative;
+  background-color: rgb(167, 198, 202);
+  height: 200px;
+  margin-bottom: 10%;
+  overflow: hidden;
+}
+.item1 {
+    grid-area: first;
+}
+.item2 {
+    grid-area: second;
+}
+.minilogo{
+    max-width: 50px;
+    max-height: auto;
+}
+/* @include media-breakpoint-up(sm) {
+    .custom-class {
+      display: block;
+    }
+  } */
+  .fab {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+  }
+
+
+  .footer {
+      height: 20%;
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      /* display: flex;
+      flex-direction: row;
+      background-color: black; */
+  }
+  #footer{
+      /* display: flex;
+      flex-direction: row; */
+      background-color: black;
+  }
+  .footercol{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact{
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  /* .col1{
+   order: 1;
+  }
+  .col2{
+    order: 2;
+  }
+  .col3{
+    order: 3;
+  } */
+  li {
+      list-style-type: none;
+  }
+  .item {
+      display: block;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  @media only screen and (max-width: 600px) {
+	  .page {
+		  overflow: hidden;
+	  }
+	  #nameTitle{
+		  font-size: 40px;
+	  }
+	  #description {
+		  font-size: 30px;
+	  }
+	  .titles {
+		  font-size: 30px;
+	  }
+	  p {
+		  font-size: 20px;
+	  }
+	  #arrtitle {
+		  font-size: 15px;
+	  }
+        .biography {
+            /* padding: 50px;
+            font: 1em sans-serif;
+            max-width: 100vh; */
+            display: block;
+			position: relative;
+        }
+        #area{
+            display: grid;
+            padding: 30px 30px;
+        }
+        #imgMe {
+            /* display: grid; */
+			display: block;
+            image-rendering: optimizeQuality;
+            /* max-height: 300px;
+            max-width: 300px; */
+            margin-left: auto;
+            margin-bottom: auto;
+			bottom: 0;
+        }
+        .item1{
+            display: block;
+            font: 1em sans-serif;
+        }
+        .item2 {
+            display: block;
+            font: 1em sans-serif;
+        }
+        #cert1{
+            font-size: 1.5rem;
+        }
+        #cert2{
+            font-size: 1.5rem;
+        }
+		#catpic{
+			display: block;
+			margin-left: auto;
+  			margin-right: auto;
+		}
+    }
+.projects {
+    margin: 5% auto;
+}
+  
