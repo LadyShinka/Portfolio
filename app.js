@@ -46,75 +46,8 @@ app.get("/home", function(req, res){
 	res.render("index");
 });
 
-// NEW ROUTE
-// app.get("/blogs/new", function(req,res){
-// 	res.render("new");
-// })
-
-// CREATE ROUTE
-// app.post("/blogs", function(req,res){
-// 	// create blog
-// 	console.log(req.body);
-// 	req.body.blog.body = req.sanitize(req.body.blog.body);
-// 	console.log(req.body);
-// 	Blog.create(req.body.blog, function(err, newBlog){
-// 		if(err){
-// 			res.render("new");
-// 		} else {
-// 			// then, redirect to index
-// 			res.redirect("/blogs");
-// 		}
-// 	})
-// });
-
-// SHOW ROUTE
-// app.get("/blogs/:id", function(req, res){
-// 	Blog.findById(req.params.id, function(err, foundBlog){
-// 		if(err) {
-// 			res.redirect("/blogs");
-// 		} else {
-// 			res.render("show", {blog: foundBlog});
-// 		}
-// 	});
-// });
-
-// EDIT ROUTE
-// app.get("/blogs/:id/edit", function(req, res){
-// 	Blog.findById(req.params.id, function(err, foundBlog){
-// 		if(err){
-// 			res.redirect("/blogs");
-// 		} else {
-// 			res.render("edit", {blog: foundBlog});
-// 		}
-// 	});
-// });
-
-// UPDATE ROUTE
-// app.put("/blogs/:id", function(req, res){
-// 	req.body.blog.body = req.sanitize(req.body.blog.body);
-// 	Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, updatedBlog){
-// 		if(err) {
-// 			res.redirect("/blogs");
-// 		} else {
-// 			res.redirect("/blogs/" + updatedBlog._id);
-// 		}
-// 	})
-// });
-
-// DELETE ROUTE
-// app.delete("/blogs/:id", function(req, res){
-// 	// destroy blog
-// 	Blog.findByIdAndRemove(req.params.id, function(err){
-// 		if(err) {
-// 			res.redirect("/blogs");
-// 		} else {
-// 			res.redirect("/blogs");
-// 		}
-// 	});
-	// redirect somewhere
-// });
 
 // On GOORM cannot use process.env.PORT but will need when deploying
-app.listen(3000, process.env.IP, function(){
+app.listen(process.end.IP, process.env.IP, function(){
 	console.log("SERVER IS RUNNING!");
 });
